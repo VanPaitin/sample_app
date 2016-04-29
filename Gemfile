@@ -11,7 +11,9 @@ gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
 gem 'pry-rails'
 gem 'bcrypt',       '3.1.7'
+
 group :development, :test do
+  gem "capybara"
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
@@ -19,11 +21,13 @@ group :development, :test do
 end
 
 group :test do
+  gem 'rspec'
   gem 'minitest-reporters', '1.0.5'
   gem 'mini_backtrace',     '0.1.3'
   gem 'guard-minitest',     '2.3.1'
   gem 'rspec-rails'
-  gem 'minitest'
+  gem "minitest"
+  gem "selenium-webdriver"
 end
 
 group :production do
