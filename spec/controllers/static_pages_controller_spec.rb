@@ -33,7 +33,7 @@ RSpec.describe StaticPagesController, type: :controller do
       assert_select "title", "About | Ruby on Rails Tutorial Sample App"
     end
   end
-  
+
   describe "GET #contact" do
     it "returns http success" do
       get :contact
@@ -44,4 +44,4 @@ RSpec.describe StaticPagesController, type: :controller do
       assert_select "title", "Contact | Ruby on Rails Tutorial Sample App"
     end
   end
-end 
+end
