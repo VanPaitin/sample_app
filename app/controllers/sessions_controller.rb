@@ -1,5 +1,8 @@
 class SessionsController < ApplicationController
   def new
+    if session[:user_id]
+      redirect_to current_user, notice: "Log out first before attempting to login"
+    end
   end
 
   def create
