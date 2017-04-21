@@ -12,6 +12,7 @@ gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
 gem 'pry-rails'
 gem 'bcrypt',       '3.1.7'
+gem 'newrelic_rpm'
 gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 
